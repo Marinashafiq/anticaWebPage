@@ -1,0 +1,80 @@
+/****** CREATIVE SECTION WITH BEFORE AND AFTER CONTENT , USING Z-INDEX FOR TEXT TO BE OVER IMAGE *****/
+
+.creative{
+  height: 100vh;
+  position: relative;
+  .creativeContainer{
+    width:65%;
+    margin: 0 auto;
+    .leftCol{
+      span{
+        color: $primary_color;
+      }
+      h2:before{
+        content: "";
+        border: 8px solid lightgrey;
+        opacity: .3;
+        padding: 50px;
+        padding-right: 100px;
+        position: absolute;
+        left: 10%;
+        top: 25px;
+      }
+      p{
+        z-index: 1;
+        position: absolute;;
+      }
+      p:before{
+        content: "BOUT";
+        font-size: 7em;
+        color: lightgrey;
+        opacity: .3;
+        position: absolute;
+        top: -17%;
+        bottom: 50%;
+        left: -61%;
+        font-weight: bold;
+      }
+      p:after{
+        content: "CREATIV";
+        font-size: 7em;
+        color: lightgrey;
+        opacity: .3;
+        position: absolute;
+        bottom: 50;
+        left: 148%;
+        z-index: 1;
+        font-weight: bold;
+      }
+    }
+    .rightCol{
+      position: absolute;
+      left:45%;
+      .creativeCarousel{
+        .creativeIndicator{
+          margin-right: 50%;
+          margin-left: 0px;
+          margin-bottom: 2%;
+          li{
+            border-radius: 50%;
+            width:10px;
+            height: 10px;
+            margin-left:15px;
+            margin-right: 15px;
+          }
+          li.active{
+            background-color: $primary_color;
+          }
+        }
+        .innerCreative{
+          .carousel-item{
+            background-image: url("../imgs/greg-rakozy-199771-unsplash.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 80vh;
+          }
+        }
+      }
+    }
+  }
+}

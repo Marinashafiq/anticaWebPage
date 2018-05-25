@@ -1,0 +1,40 @@
+
+/************ Font************/
+@font-face {
+  font-family: raleway;
+  url:src("../fonts/raleway/Raleway-Regular.ttf")
+}
+body{
+  font-family: raleway
+}
+
+
+/***********GENERAL STYLES ********/
+.logo{
+  background-color: $primary_color;
+  padding: 10px;
+  padding-left:15px;
+  padding-right: 15px;
+  color: white;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.lineColor{
+  width:15%;
+  margin: 0 auto 0 0;
+  border:1px solid $primary_color;
+
+}
+
+.containerLang{
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  .languages{
+    color: white;
+    span{
+      color:$primary_color;
+    }
+  }
+}

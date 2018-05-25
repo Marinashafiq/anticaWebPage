@@ -1,0 +1,39 @@
+/**************** SERVICES SECTION BACKGROUND IMAGE *********/
+.services{
+  background-image: url("../imgs/service.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  nav{
+    img{
+      position: relative;
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .text{
+    margin-top: 25%;
+    span{
+      color: $primary_color;
+    }
+  }
+}
+
+/********** IMAGE WITH OVERLAY AND FONT AWSOME ICONS **************/
+
+  .sections{
+    background-image: url("../imgs/nicolas-prieto-185123-unsplash.jpg");
+    background-size: cover;
+    .overlay{
+      background-color: white;
+      opacity: .8;
+      i{
+        color:  $primary_color;
+      }
+      h6{
+        font-weight: bold;
+        font-size: 12px;
+      }
+    }
+  }

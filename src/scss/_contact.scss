@@ -1,0 +1,55 @@
+.contact{
+  background-image: url("../imgs/contact.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  nav{
+    img{
+      height: 20px;
+      width:20px;
+    }
+  }
+  .row{
+    .col-md-5{
+      h2{
+        color: white;
+        position: absolute;
+        left: 30%;
+        top:20%;
+        span{
+          color: $primary_color;
+        }
+      }
+      .contacts{
+        position: absolute;
+        top: 75%;
+        left: 55%;
+        color: white;
+        font-weight: bolder;
+        p{
+          color: $primary_color;
+        }
+      }
+      .languages{
+        color: white;
+        span{
+          color:$primary_color;
+        }
+      }
+    }
+    form{
+      input::placeholder ,textarea::placeholder{
+        color: white;
+        font-weight: bold;
+        font-size: 12px;
+      }
+      .btn-outline-light{
+        border-color: #545b62;
+        i{
+          color: $primary_color;
+        }
+      }
+    }
+  }
+}
